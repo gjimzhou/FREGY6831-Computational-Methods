@@ -1,7 +1,7 @@
 # MTH6831-Computational-Methods
 ## Final Project: Computational Methods Classes
 
-This final project for this course is to create a Python class that contains different computational methods that we learned in this autumn semester. 
+This final project is to create a Python class that contains different computational methods. 
 
 
 
@@ -11,7 +11,7 @@ Base class that is named ComputationalMethods. This class contains:
 
 Functions for European call and put option payoff.
 
-Functions for Black-Scholes formulae. The outputs should contain price, delta, gamma, theta, vega, rho.
+Functions for Black-Scholes formula. The outputs should contain price, delta, gamma, theta, vega, rho.
 
 
 
@@ -23,7 +23,7 @@ Function Black_Scholes_Explicit_FD, which solves Black-Scholes equation through 
 
 Function Black_Scholes_Implicit_FD, which solves Black-Scholes equation through implicit finite difference method.
 
-Function Black_Scholes_Crank_N icolson_FD, which solves Black-Scholes equation through Crank-Nicolson finite difference method.
+Function Black_Scholes_Crank_Nicolson_FD, which solves Black-Scholes equation through Crank-Nicolson finite difference method.
 
 
 
@@ -35,7 +35,7 @@ Function Gaussian_Radial_Basis_Function. The outputs should contain the value of
 
 Function Multi_Quadric_Radial_Basis_Function. The outputs should contain the value of the function, first order derivative, and second order derivative.
 
-Function Black_Scholes_RBF_F D, which solves Black-Scholes equation through radial basis function-generated finite difference.
+Function Black_Scholes_RBF_FD, which solves Black-Scholes equation through radial basis function-generated finite difference.
 
 
 
