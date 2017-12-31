@@ -1,4 +1,4 @@
-# MTH6831-Computational-Methods
+# FREGY6831-Computational-Methods
 ## Final Project: Computational Methods Classes
 
 This final project is to create a Python class that contains different computational methods. 
