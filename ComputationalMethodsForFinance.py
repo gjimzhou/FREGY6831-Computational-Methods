@@ -8,11 +8,11 @@ import math
 import numpy as np
 import EuropeanOptionPayoff as ep
 import BlackScholesEuropeanOption as bs
-import Black_Scholes_Explicit_FD as ex
-import Black_Scholes_Implicit_FD as im
-import Black_Scholes_Crank_Nicolson_FD as cn
-import Radial_Basis_Function as rbf
-import Black_Scholes_RBF_FD as rb
+import BlackScholesExplicitFD as ex
+import BlackScholesImplicitFD as im
+import BlackScholesCrankNicolsonFD as cn
+import RadialBasisFunction as rbf
+import BlackScholesRBFFD as rb
 import MonteCarloForStockPrice as mc
 
 

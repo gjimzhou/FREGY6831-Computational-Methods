@@ -1,4 +1,4 @@
-# Radial_Basis_Function.py
+# RadialBasisFunction.py
 
 """
 Wheels for RBF

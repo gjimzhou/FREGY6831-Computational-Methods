@@ -1,4 +1,4 @@
-# Black_Scholes_Crank_Nicolson_FD.py
+# BlackScholesCrankNicolsonFD.py
 
 """
 Crank Nicolson Finite Difference Method for Black-Scholes PDE
@@ -7,7 +7,7 @@ Crank Nicolson Finite Difference Method for Black-Scholes PDE
 import math
 import numpy as np
 from scipy.sparse import spdiags
-import LU_Decomposition_Matrix_Inverse as lu
+import LUDecompositionMatrixInverse as lu
 
 
 def Black_Scholes_Crank_Nicolson_FD(stock_price_max, stock_price_min, N_size_price, M_size_time, T, t, strike_price,

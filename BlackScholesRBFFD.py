@@ -1,4 +1,4 @@
-# Black_Scholes_RBF_FD.py
+# BlackScholesRBFFD.py
 
 """
 Radial Basis Function Generated Finite Difference Method for European Options
@@ -7,7 +7,7 @@ Radial Basis Function Generated Finite Difference Method for European Options
 import numpy as np
 import math
 from scipy.sparse import spdiags
-import LU_Decomposition_Matrix_Inverse as lu
+import LUDecompositionMatrixInverse as lu
 import copy
 
 

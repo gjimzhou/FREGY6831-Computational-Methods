@@ -1,4 +1,4 @@
-# LU_Decomposition_Matrix_Inverse.py
+# LUDecompositionMatrixInverse.py
 
 """
 wheels for LU decomposition
