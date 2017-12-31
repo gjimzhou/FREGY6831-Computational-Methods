@@ -5,7 +5,7 @@ This final project for this course is to create a Python class that contains dif
 
 
 
-# ComputationalMethods Class
+### ComputationalMethods Class
 
 Base class that is named ComputationalMethods. This class contains:
 
@@ -15,7 +15,7 @@ Functions for Black-Scholes formulae. The outputs should contain price, delta, g
 
 
 
-# FiniteDifferenceMethods Class
+### FiniteDifferenceMethods Class
 
 Child class that is named FiniteDifferenceMethods. This class contains:
 
@@ -27,7 +27,7 @@ Function Black_Scholes_Crank_N icolson_FD, which solves Black-Scholes equation t
 
 
 
-# RadialBasisFunctionApproaches Class
+### RadialBasisFunctionApproaches Class
 
 Child class that is named RadialBasisFunctionApproaches. This class contains:
 
@@ -39,7 +39,7 @@ Function Black_Scholes_RBF_F D, which solves Black-Scholes equation through radi
 
 
 
-# MonteCarloSimulationForStockPrice Class
+### MonteCarloSimulationForStockPrice Class
 
 Child class that is named MonteCarloSimulationForStockPrice. This class contains:
 
