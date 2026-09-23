@@ -29,8 +29,8 @@ stock_price_min = stock_price * math.exp(
 stock_prices, times = np.meshgrid(np.linspace(stock_price_min, stock_price_max, N_size_price+1),
     np.linspace(0, maturity, M_size_time+1))
 
-N_size_prices = np.fromiter((10 * 2 ** x for x in range(5)), np.int)
-M_size_times = np.fromiter((10 * 2 ** x for x in range(5)), np.int)
+N_size_prices = np.fromiter((10 * 2 ** x for x in range(5)), int)
+M_size_times = np.fromiter((10 * 2 ** x for x in range(5)), int)
 
 cm = ComputationalMethods(stock_price, strike_price, maturity, interest_rate, dividend_yield, volatility)
 fdm = FiniteDifferenceMethods(stock_price, strike_price, maturity, interest_rate, dividend_yield, volatility)
