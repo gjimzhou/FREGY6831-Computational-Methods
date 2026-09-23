@@ -29,13 +29,13 @@ def Black_Scholes_RBF_FD(option_parameters, mesh_setting, RBF, payoff, S_min, S_
     x = np.linspace(x_min, x_max, N + 1)
     
     # initial value
-    initial_value = np.fromiter((payoff(math.exp(n), K) for n in x), np.float)
+    initial_value = np.fromiter((payoff(math.exp(n), K) for n in x), float)
     if T == 0:
         return copy.deepcopy(initial_value)
 
     # boundary conditions
-    bound_min = np.fromiter(((payoff(math.exp(x_min) * math.exp(-q * m), K * math.exp(-r * m))) for m in tau), np.float)
-    bound_max = np.fromiter(((payoff(math.exp(x_max) * math.exp(-q * m), K * math.exp(-r * m))) for m in tau), np.float)
+    bound_min = np.fromiter(((payoff(math.exp(x_min) * math.exp(-q * m), K * math.exp(-r * m))) for m in tau), float)
+    bound_max = np.fromiter(((payoff(math.exp(x_max) * math.exp(-q * m), K * math.exp(-r * m))) for m in tau), float)
 
     # calculate the weighting matrix W
     epsilon = 1.0
@@ -89,9 +89,9 @@ def BS_operator_RBF(option_parameters, mesh_setting, RBF, x_c, S_min, S_max):
     x = [x_c - delta_x, x_c, x_c + delta_x]
 
     epsilon = 1
-    L = np.fromiter((RBF(epsilon, x_c, b)[0] for b in x), np.float)
-    L_x = np.fromiter((RBF(epsilon, x_c, b)[1] for b in x), np.float)
-    L_xx = np.fromiter((RBF(epsilon, x_c, b)[2] for b in x), np.float)
+    L = np.fromiter((RBF(epsilon, x_c, b)[0] for b in x), float)
+    L_x = np.fromiter((RBF(epsilon, x_c, b)[1] for b in x), float)
+    L_xx = np.fromiter((RBF(epsilon, x_c, b)[2] for b in x), float)
 
     L_operator = (r - 0.5 * sig ** 2) * L_x + 0.5 * sig ** 2 * L_xx - r * L
     return L_operator
