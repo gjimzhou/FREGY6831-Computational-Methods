@@ -24,7 +24,7 @@ def Jump_Diffusion_Process_At_Fixed_Dates(S, T, r, sig, q, lam, a, b, N, M, seed
             z2 = standard_gaussian_random_number[2 * (M * i + j) + 1]
             n = np.random.poisson(lam)
 
-            Si = Si * math.exp((r - q - sig ** 2) * dt + sig * math.sqrt(dt) * z1 + a * n + b * math.sqrt(n) * z2)
+            Si = Si * math.exp((r - q - 0.5 * sig ** 2) * dt + sig * math.sqrt(dt) * z1 + a * n + b * math.sqrt(n) * z2)
             jump_diffusion_path.append(Si)
 
         jump_diffusion_paths.append(jump_diffusion_path)
