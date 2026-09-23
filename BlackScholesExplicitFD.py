@@ -23,11 +23,11 @@ def Black_Scholes_Explicit_FD(stock_price_max, stock_price_min, N_size_price, M_
 
     A = spdiags(np.array([d[1:N_size_price], l[2:(N_size_price+1)], u[0:(N_size_price-1)]]), np.array([0, -1, 1]),
                 N_size_price-1, N_size_price-1).toarray()
-    v = np.fromiter((payoff_function(x, strike_price) for x in s), np.float)
+    v = np.fromiter((payoff_function(x, strike_price) for x in s), float)
     bound_min = np.fromiter((payoff_function(stock_price_min * math.exp(-dividend_yield * x),
-                                             strike_price * math.exp(-interest_rate * x)) for x in tao), np.float)
+                                             strike_price * math.exp(-interest_rate * x)) for x in tao), float)
     bound_max = np.fromiter((payoff_function(stock_price_max * math.exp(-dividend_yield * x),
-                                             strike_price * math.exp(-interest_rate * x)) for x in tao), np.float)
+                                             strike_price * math.exp(-interest_rate * x)) for x in tao), float)
     option_prices = [v.tolist()]
 
     for k in range(1, M_size_time+1):
