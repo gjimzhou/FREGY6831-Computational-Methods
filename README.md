@@ -46,3 +46,7 @@ Child class that is named MonteCarloSimulationForStockPrice. This class contains
 Function Geometric_Brownian_Motion, which generate trajectories of geometric Brownian motion.
 
 Function GBM_With_Jump_At_Fixed_Dates, which generate trajectories of geometric Brownian motion with jumps.
+
+## License and course materials
+
+The existing [GPL](LICENSE) is retained for my original source-code implementation, except where otherwise noted. Course assignments, instructor material, templates and third-party data are not newly licensed here. Existing valid grants and attribution remain intact. See [NOTICE](NOTICE) and [data provenance](DATA-SOURCES.md).
